@@ -1,23 +1,13 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
 // import './nav.css'; // If you want to add custom styles
 
-// // function Navbar() {
-// //   return (
-// //     <nav>
-// //       <ul>
-// //         <li>
-// //           <Link to="/">Home</Link>
-// //         </li>
-// //         <li>
-// //           <Link to="/about">About</Link>
-// //         </li>
-// //         <li>
-// //           <Link to="/contact">Contact</Link>
-// //         </li>
-// //       </ul>
-// //     </nav>
-// //   );
-// // }
 
-// // export default Navbar;
+const Navbar = () =>{
+  return (
+    <div>
+        <p>Hi</p>
+    </div>
+  );
+}
+
+export default Navbar;

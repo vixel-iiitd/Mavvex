@@ -1,16 +1,20 @@
 import './App.css';
-// import './components/nav.jsx';
 
-function App() {
-  return (
-    <div className="App">
-      {/* <nav /> */}
-      {/* <p>Hi</p> */}
-      {/* The rest of your app goes here */}
-    </div>
-  );
-}
+// import {useState, useEffect} from "react";
+// import {getTest} from "./functions/test";
+import React from 'react';
+// import ReactDOM from 'react-dom';
+import MainRouter from "./MainRouter.jsx";
+import {BrowserRouter as Router} from 'react-router-dom';
+
+const App = () => (
+
+  <div>
+    <Router>
+        <MainRouter />
+    </Router>
+    <p>HELLO</p>
+  </div>
+);
 
 export default App;
-
-
