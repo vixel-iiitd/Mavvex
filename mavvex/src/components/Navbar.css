@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 
 nav {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ nav {
 }
 
 .nav-links a {
-  color: #000000;
+  color: #ffffff;
   display: block;
   font-size: 16px;
   padding: 20px;
@@ -32,7 +32,8 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #ffffff;
+  background-color: #106ca5;
+  border: 50px;
 }
 
 .dropdown {
@@ -43,10 +44,11 @@ nav {
   content: "\25BE";
   display: inline-block;
   margin-left: 5px;
+  border: 10px;
 }
 
 .dropdown .dropdown-menu {
-  background-color: #ffffff;
+  background-color: transparent;
   display: none;
   list-style: none;
   margin: 0;
@@ -54,6 +56,8 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+  border: 50px;
 }
 
 .dropdown.active .dropdown-menu {
@@ -65,32 +69,35 @@ nav {
 }
 
 .dropdown-menu a {
-  color: #737373;
+  color: #ffffff;
   display: block;
   font-size: 16px;
   padding: 10px 20px;
   text-decoration: none;
+  border: 20px;
 }
 
 .dropdown-menu a:hover {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(65, 113, 223);
 }
 
 .dropdown-submenu .dropdown-menu {
   left: 100%;
   top: 0;
   margin-top: -1px;
+
+  border: 20px;
 }
 
 .h-9 {
-  height: 4rem;
+  height: 5rem;
   align-items: left;
   margin: 2rem;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 /* Show the dropdown menu on hover */
@@ -110,7 +117,7 @@ nav {
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #ffffff;
+    background-color: transparent;
     z-index: 1;
   }
 
@@ -136,10 +143,24 @@ nav {
   }
 
   nav.active .menu-icon i {
-    color: #000000;
+    color: #ffffff;
   }
 
   nav.active .menu-icon i:before {
     content: "Close";
   }
+}
+
+.video-container {
+  z-index: -100;
+  /* width: 100%;
+  height: 100%; */
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  left: -10%;
+}
+
+#video-bg {
+  width: 10%;
 }
