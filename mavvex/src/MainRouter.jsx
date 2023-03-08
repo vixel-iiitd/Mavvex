@@ -1,17 +1,17 @@
 import React from 'react';
-// import './nav.css'; // If you want to add custom styles
-import {Route,Routes} from 'react-router-dom';
-import Navbar from './components/nav.jsx'
+import Navbar from './components/nav'
 
+import { Route, Routes } from 'react-router-dom';
 
-const MainRouter = () => {
+console.log('here')
+function MainRouter() {
   return (
-    // <Routes>
-    //     <Route path = "/" element = {<Navbar/>}/>
-    //     <Route path = "/about" element = {<Navbar/>}/>
-    // </Routes>
-    
-        <p>Hi</p>
+    <Routes>
+      <Route path="/" element={<Navbar />} />
+      <Route path="/about" element={<Navbar />} />
+      <Route path="/contact" element={<Navbar />} />
+    </Routes>
+  
   );
 }
 

@@ -1,11 +1,10 @@
 import React from 'react';
-// import './nav.css'; // If you want to add custom styles
 
-
-const Navbar = () =>{
+function Navbar() {
   return (
     <div>
-        <p>Hi</p>
+      <h1>Welcome to my React app!</h1>
+      <p1>This is the home page.</p1>
     </div>
   );
 }
