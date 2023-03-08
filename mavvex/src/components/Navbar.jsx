@@ -1,11 +1,18 @@
 import "./Navbar.css";
-import React from "react";
+import React ,{ useState }from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Images/Logo.png";
 
 const Navbar = () => {
+
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <nav>
+    <nav className={isActive ? 'active' : ''}>
       <img src={Logo} className="h-9" alt="logo" />
       <ul className="nav-links">
         <li className="dropdown">
@@ -30,9 +37,6 @@ const Navbar = () => {
               <Link to="/">Security and Privacy in AI</Link>
             </li>
           </ul>
-        </li>
-        <li>
-          <Link to="/">Customers</Link>
         </li>
 
         <li className="dropdown">
@@ -66,11 +70,19 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
+        <li>
+          <Link to="/">Customers</Link>
+        </li>
 
         <li>
           <Link to="/">Blog</Link>
         </li>
       </ul>
+
+      <div className="menu-icon" onClick={toggleMenu}>
+        <i className={isActive ? 'fas fa-times' : 'fas fa-bars'}></i>
+      </div>
+
     </nav>
   );
 };

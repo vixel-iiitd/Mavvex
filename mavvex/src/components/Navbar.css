@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+
 nav {
-  background-color: #333;
+  background-color: #ffffff;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 80px;
   padding: 0 20px;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-links {
@@ -20,15 +24,15 @@ nav {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #000000;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   padding: 20px;
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  background-color: #555;
+  background-color: #ffffff;
 }
 
 .dropdown {
@@ -42,7 +46,7 @@ nav {
 }
 
 .dropdown .dropdown-menu {
-  background-color: #333;
+  background-color: #ffffff;
   display: none;
   list-style: none;
   margin: 0;
@@ -61,7 +65,7 @@ nav {
 }
 
 .dropdown-menu a {
-  color: #fff;
+  color: #737373;
   display: block;
   font-size: 16px;
   padding: 10px 20px;
@@ -69,7 +73,7 @@ nav {
 }
 
 .dropdown-menu a:hover {
-  background-color: #255;
+  background-color: rgb(228, 228, 228);
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -79,16 +83,63 @@ nav {
 }
 
 .h-9 {
-  height: 5rem;
-  margin: 1rem;
+  height: 4rem;
+  align-items: left;
+  margin: 2rem;
 }
 
-
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #000000;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {display: block;}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 768px) {
+  nav .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  nav .nav-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav .nav-links li.dropdown > a::after {
+    content: " ►";
+  }
+
+  nav .dropdown-menu {
+    position: static;
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  nav .dropdown-menu li a {
+    padding: 5px 20px;
+  }
+
+  nav.active .menu-icon i {
+    color: #000000;
+  }
+
+  nav.active .menu-icon i:before {
+    content: "Close";
+  }
+}
