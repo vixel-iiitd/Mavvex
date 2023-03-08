@@ -1,17 +1,15 @@
-import React from 'react';
-import Navbar from './components/nav'
+import React from "react";
 
-import { Route, Routes } from 'react-router-dom';
+// import {Route} from "react-router-dom";
+import { Routes } from "react-router-dom";
 
-console.log('here')
 function MainRouter() {
   return (
     <Routes>
-      <Route path="/" element={<Navbar />} />
-      <Route path="/about" element={<Navbar />} />
-      <Route path="/contact" element={<Navbar />} />
+      {/* //   <Route path="/" element={<Home />} />
+    //   <Route path="/about" element={<About us />} />
+    //   <Route path="/contact" element={<Contact />} /> */}
     </Routes>
-  
   );
 }
 
