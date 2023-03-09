@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
 nav {
   background-color: transparent;
   color: #fff;
@@ -109,6 +110,45 @@ nav {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+.video-container {
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  display: inline;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 30px;
+}
+.video-container {
+  height: 100%;
+  width: 100%;
+  /* overflow: auto; */
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 5%,
+    rgba(0, 0, 0, 1) 44%,
+    transparent 95%
+  );
+}
+
+#video-bg {
+  width: 100%;
+}
+
+.Video-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
 @media (max-width: 768px) {
   nav .nav-links {
@@ -149,18 +189,33 @@ nav {
   nav.active .menu-icon i:before {
     content: "Close";
   }
-}
 
-.video-container {
-  z-index: -100;
-  /* width: 100%;
-  height: 100%; */
-  overflow: hidden;
-  position: absolute;
-  top: -50%;
-  left: -10%;
-}
+  .video-container {
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    display: inline;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 15px;
+  }
 
-#video-bg {
-  width: 10%;
+  #video-bg {
+    width: 100%;
+  }
+
+  .Video-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 }

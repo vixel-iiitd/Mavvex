@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Images/Logo.png";
 
-import videoBG from "../Videos/Video2.mp4";
+import videoBG from "../Videos/Video8.mp4";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -89,6 +89,11 @@ const Navbar = () => {
 
       <div class="video-container">
         <video src={videoBG} type="video/mp4" autoPlay loop muted />
+
+        <div className="Video-text">
+          <h2>AN AI BASED  CONSULTANCY AND </h2>
+          <h2>PRODUCT DEVELOPMENT ENTERPRISE</h2>
+        </div>
       </div>
     </div>
   );
