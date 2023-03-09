@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
 nav {
   background-color: transparent;
   color: #fff;
@@ -10,7 +11,8 @@ nav {
   height: 80px;
   padding: 0 20px;
   /* font-family: "Lato", sans-serif; */
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  
 }
 
 .nav-links {
@@ -33,7 +35,7 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #106ca5;
+  background-color: rgba(161, 28, 176, 0.2);
   border: 50px;
 }
 
@@ -49,7 +51,7 @@ nav {
 }
 
 .dropdown .dropdown-menu {
-  background-color: transparent;
+  background-color: rgba(5, 146, 162, 0.5);
   display: none;
   list-style: none;
   margin: 0;
@@ -59,6 +61,7 @@ nav {
   left: 0;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
   border: 50px;
+  
 }
 
 .dropdown.active .dropdown-menu {
@@ -79,7 +82,7 @@ nav {
 }
 
 .dropdown-menu a:hover {
-  background-color: rgb(65, 113, 223);
+  background-color: rgba(103, 181, 233, 0.9);
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -109,45 +112,6 @@ nav {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-}
-.video-container {
-  z-index: -10;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: -10%;
-  left: 0;
-  display: inline;
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 30px;
-}
-.video-container {
-  height: 100%;
-  width: 100%;
-  /* overflow: auto; */
-  -webkit-mask-image: linear-gradient(
-    180deg,
-    transparent 5%,
-    rgba(0, 0, 0, 1) 44%,
-    transparent 95%
-  );
-}
-
-#video-bg {
-  width: 100%;
-}
-
-.Video-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
 }
 
 @media (max-width: 768px) {
@@ -188,34 +152,5 @@ nav {
 
   nav.active .menu-icon i:before {
     content: "Close";
-  }
-
-  .video-container {
-    z-index: -10;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: -10%;
-    left: 0;
-    display: inline;
-    font-family: "Nanum Myeongjo", serif;
-    font-size: 15px;
-  }
-
-  #video-bg {
-    width: 100%;
-  }
-
-  .Video-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
   }
 }

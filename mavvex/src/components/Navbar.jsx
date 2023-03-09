@@ -87,14 +87,7 @@ const Navbar = () => {
         </nav>
       </div>
 
-      <div class="video-container">
-        <video src={videoBG} type="video/mp4" autoPlay loop muted />
-
-        <div className="Video-text">
-          <h2>AN AI BASED  CONSULTANCY AND </h2>
-          <h2>PRODUCT DEVELOPMENT ENTERPRISE</h2>
-        </div>
-      </div>
+      
     </div>
   );
 };
