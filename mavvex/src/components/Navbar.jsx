@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Images/Logo.png";
 
@@ -7,15 +7,26 @@ import videoBG from "../Videos/Video8.mp4";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
 
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+    // clean up code
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  console.log(isActive);
+
   return (
     <div>
       <div>
-        <nav className={isActive ? "active" : ""}>
+        <nav className={offset ? "active sticky" : "sticky"}>
           <img src={Logo} className="h-9" alt="logo" />
           <ul className="nav-links">
             <li className="dropdown">
@@ -80,8 +91,7 @@ const Navbar = () => {
               <Link to="/">Blog</Link>
             </li>
           </ul>
-
-          <div className="menu-icon" onClick={toggleMenu}>
+          <div className="menu-icon" onWheel={toggleMenu}>
             <i className={isActive ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
         </nav>
