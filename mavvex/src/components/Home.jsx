@@ -6,14 +6,29 @@ import BackgroundVideo from "./BackgroundVideo";
 function Home() {
   return (
     <div>
-      <div>
+      <section>
         <Navbar />
-        <BackgroundVideo />
-      </div>
+        <section>
+          <BackgroundVideo />
+        </section>
+      </section>
 
-      <div className="container1">
-        <h1>Hi</h1>
-      </div>
+      <section className="section1">
+        <div className="hero">
+          <p>Industries</p>
+        </div>
+      </section>
+
+      <section className="section2">
+        <div className="hero">
+          <p>Reasearch</p>
+        </div>
+      </section>
+      <section className="section2">
+        <div className="hero">
+          <p>Company</p>
+        </div>
+      </section>
     </div>
   );
 }

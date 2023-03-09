@@ -1,7 +1,16 @@
-.container1 {
-  /* position: relative; */
-  margin-top: 25rem;
+.section1 {
+  margin-top: 24.6rem;
+  padding: 2rem 10rem;
+  background-color: transparent;
+  height: 90vh;
   justify-content: center;
   align-items: center;
-  display: flex;
+}
+.section2 {
+  margin-top: 0.5rem;
+  padding: 2rem 10rem;
+  background-color: rgb(3, 88, 88);
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
 }
