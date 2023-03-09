@@ -28,7 +28,33 @@ const Navbar = () => {
           <img src={Logo} className="h-9" alt="logo" />
           <ul className="nav-links">
             <li className="dropdown">
-              <ScrollLink to="Industries" spy={true} smooth={true}className="dropdown-toggle">
+              <Link to="/" className="dropdown-toggle">
+                Use Case
+              </Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/">Deep Tech Product Development</Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    Enabling Data Privacy in Machine Learning Model
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    Better Language Transcription and Translation Services
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+            <li className="dropdown">
+              <ScrollLink
+                to="Industries"
+                spy={true}
+                smooth={true}
+                className="dropdown-toggle"
+              >
                 Industries
               </ScrollLink>
 
@@ -39,16 +65,24 @@ const Navbar = () => {
                   </ScrollLink>
                 </li>
                 <li>
-                  <ScrollLink to="Industries" spy={true} smooth={true}>Retail</ScrollLink>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>
+                    Retail
+                  </ScrollLink>
                 </li>
                 <li>
-                  <ScrollLink to="Industries" spy={true} smooth={true}>Agriculture</ScrollLink>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>
+                    Agriculture
+                  </ScrollLink>
                 </li>
                 <li>
-                  <ScrollLink to="Industries" spy={true} smooth={true}>Conversational AI</ScrollLink>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>
+                    Conversational AI
+                  </ScrollLink>
                 </li>
                 <li>
-                  <ScrollLink to="Industries" spy={true} smooth={true}>Security and Privacy in AI</ScrollLink>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>
+                    Security and Privacy in AI
+                  </ScrollLink>
                 </li>
               </ul>
             </li>
