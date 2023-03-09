@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Navbar from "./Navbar.jsx";
 import BackgroundVideo from "./BackgroundVideo";
+import Industries from "./Industries";
 
 function Home() {
   return (
@@ -14,9 +15,7 @@ function Home() {
       </section>
 
       <section className="section1">
-        <div className="hero">
-          <p>Industries</p>
-        </div>
+        <Industries />
       </section>
 
       <section className="section2">

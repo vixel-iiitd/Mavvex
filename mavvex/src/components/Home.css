@@ -1,6 +1,8 @@
 .section1 {
-  margin-top: 20rem;
-  padding: 15rem 10rem;
+  top: 20rem;
+  left: 0;
+  margin-top: 10rem;
+  padding: 20rem 10rem;
   background-color: transparent;
   height: 90vh;
   justify-content: center;

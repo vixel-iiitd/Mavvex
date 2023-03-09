@@ -115,11 +115,10 @@ nav {
 @media (max-width: 768px) {
   nav .nav-links {
     position: absolute;
-    top: 70px;
+    top: 40px;
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: transparent;
     z-index: 1;
   }
 
@@ -142,6 +141,24 @@ nav {
 
   nav .dropdown-menu li a {
     padding: 5px 20px;
+  }
+  nav .active.sticky {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    height: 8rem;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(212, 0, 0, 0);
+  }
+  .sticky {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    height: 100rem;
   }
 }
 

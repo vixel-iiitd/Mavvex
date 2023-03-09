@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Images/Logo.png";
 
-import videoBG from "../Videos/Video8.mp4";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -21,8 +21,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  console.log(isActive);
-
   return (
     <div>
       <div>
@@ -30,24 +28,27 @@ const Navbar = () => {
           <img src={Logo} className="h-9" alt="logo" />
           <ul className="nav-links">
             <li className="dropdown">
-              <Link to="/" className="dropdown-toggle">
+              <ScrollLink to="Industries" spy={true} smooth={true}className="dropdown-toggle">
                 Industries
-              </Link>
+              </ScrollLink>
+
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/">Healthcare</Link>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>
+                    Healthcare
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link to="/">Retail</Link>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>Retail</ScrollLink>
                 </li>
                 <li>
-                  <Link to="/">Agriculture</Link>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>Agriculture</ScrollLink>
                 </li>
                 <li>
-                  <Link to="/">Conversational AI</Link>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>Conversational AI</ScrollLink>
                 </li>
                 <li>
-                  <Link to="/">Security and Privacy in AI</Link>
+                  <ScrollLink to="Industries" spy={true} smooth={true}>Security and Privacy in AI</ScrollLink>
                 </li>
               </ul>
             </li>
