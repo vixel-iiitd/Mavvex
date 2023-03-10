@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterStyles';
+
 
 const Footer = () => {
   return (
@@ -11,30 +11,30 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Use Cases</FooterLinkTitle>
-              <FooterLink to='/'>Automated Machine Learning</FooterLink>
-              <FooterLink to='/'>Data Analysis and Visualization</FooterLink>
-              <FooterLink to='/'>Natural Language Processing</FooterLink>
-              <FooterLink to='/'>Deep Learning and Neural Networks</FooterLink>
+              <FooterLink to='/'>Deep Tech Product Development</FooterLink>
+              <FooterLink to='/'>Enabling Data Privacy in Machine Learning Model</FooterLink>
+              <FooterLink to='/'>Better Language Transcription and Translation Services</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Industries</FooterLinkTitle>
               <FooterLink to='/'>Healthcare</FooterLink>
-              <FooterLink to='/'>Finance</FooterLink>
               <FooterLink to='/'>Retail</FooterLink>
-              <FooterLink to='/'>Automotive</FooterLink>
+              <FooterLink to='/'>Agriculture</FooterLink>
+              <FooterLink to='/'>Conversational AI</FooterLink>
+              <FooterLink to='/'>Security and Privacy in AI</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Research</FooterLinkTitle>
               <FooterLink to='/'>Publications</FooterLink>
-              <FooterLink to='/'>Projects</FooterLink>
+              <FooterLink to='/'>Research Team</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Company</FooterLinkTitle>
               <FooterLink to='/'>About Us</FooterLink>
-              <FooterLink to='/'>Careers</FooterLink>
               <FooterLink to='/'>Contact Us</FooterLink>
+              <FooterLink to='/'>Careers</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

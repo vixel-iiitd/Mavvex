@@ -5,6 +5,7 @@ export const FooterContainer = styled.footer`
   color: #fff;
 `;
 
+
 export const FooterWrap = styled.div`
   padding: 48px 24px;
   display: flex;
@@ -54,6 +55,7 @@ export const FooterLinkTitle = styled.h1`
 `;
 
 export const FooterLink = styled.a`
+  cursor: pointer; 
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
