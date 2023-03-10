@@ -39,7 +39,7 @@ const Footer = () => {
               <FooterLink to='/'>Careers</FooterLink>
             </FooterLinkItems>
             <FooterContactItems>
-              <FooterContactTitle>Company</FooterContactTitle>
+              <FooterContactTitle>Contact</FooterContactTitle>
               <FooterContact><FaHome style={styles.icon} />1197 Sainik Colony Sector 49, Faridabad HR 121001 India</FooterContact>
               <FooterContact><FaEnvelope style={styles.icon} />admin@mavvexlabs.com</FooterContact>
             </FooterContactItems>

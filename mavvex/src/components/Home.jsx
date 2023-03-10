@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import BackgroundVideo from "./BackgroundVideo";
-import HomeIndustries from "./HomeIndustries";
+import UseCase1 from "./UseCase1";
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
       </section>
 
       <section className="section1">
-        <HomeIndustries />
+        <UseCase1 />
       </section>
       <section className="section2">
         <div className="hero">

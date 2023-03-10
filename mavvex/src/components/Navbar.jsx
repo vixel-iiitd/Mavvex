@@ -33,7 +33,7 @@ const Navbar = () => {
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/">Deep Tech Product Development</Link>
+                  <ScrollLink to="UseCase1" >Deep Tech Product Development</ScrollLink>
                 </li>
                 <li>
                   <Link to="/">
@@ -61,29 +61,29 @@ const Navbar = () => {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/Industries">
+                  <Link to="/Healthcare">
                     Healthcare
                   </Link>
                 </li>
                 <li>
-                  <ScrollLink to="HomeIndustries" spy={true} smooth={true}>
+                  <Link to="/Retail">
                     Retail
-                  </ScrollLink>
+                  </Link>
                 </li>
                 <li>
-                  <ScrollLink to="HomeIndustries" spy={true} smooth={true}>
-                    Agriculture
-                  </ScrollLink>
+                  <Link to="/Agriculture">
+                      Agriculture
+                  </Link>
                 </li>
                 <li>
-                  <ScrollLink to="HomeIndustries" spy={true} smooth={true}>
-                    Conversational AI
-                  </ScrollLink>
+                  <Link to="/ConversationalAI">
+                  Conversational AI
+                  </Link>
                 </li>
                 <li>
-                  <ScrollLink to="HomeIndustries" spy={true} smooth={true}>
-                    Security and Privacy in AI
-                  </ScrollLink>
+                  <Link to="/SecurityPrivacyAI">
+                  Security and Privacy in AI
+                  </Link>
                 </li>
               </ul>
             </li>
