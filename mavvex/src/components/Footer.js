@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterStyles';
+import { FaHome, FaEnvelope } from 'react-icons/fa';
+import styles from './FooterStyles';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterContactItems, FooterContactTitle, FooterContact, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterStyles';
 
 
 const Footer = () => {
@@ -36,6 +38,11 @@ const Footer = () => {
               <FooterLink to='/'>Contact Us</FooterLink>
               <FooterLink to='/'>Careers</FooterLink>
             </FooterLinkItems>
+            <FooterContactItems>
+              <FooterContactTitle>Company</FooterContactTitle>
+              <FooterContact><FaHome style={styles.icon} />1197 Sainik Colony Sector 49, Faridabad HR 121001 India</FooterContact>
+              <FooterContact><FaEnvelope style={styles.icon} />admin@mavvexlabs.com</FooterContact>
+            </FooterContactItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
@@ -61,5 +68,7 @@ const Footer = () => {
     </FooterContainer>
   );
 };
+
+
 
 export default Footer;

@@ -67,6 +67,35 @@ export const FooterLink = styled.a`
   }
 `;
 
+export const FooterContactItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 420px) {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+`;
+
+export const FooterContactTitle = styled.h1`
+  font-size: 16px;
+  margin-bottom: 16px;
+`;
+
+export const FooterContact = styled.a`
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+`;
+
+
 export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
@@ -111,3 +140,18 @@ export const SocialIconLink = styled.a`
   font-size: 24px;
 `;
 
+const styles = {
+  icon: {
+    marginRight: '0.5rem',
+  },
+  '@media (max-width: 768px)': {
+    
+    icon: {
+      marginBottom: '0.5rem',
+      marginRight: 0,
+    },
+  },
+};
+
+
+export default styles;
