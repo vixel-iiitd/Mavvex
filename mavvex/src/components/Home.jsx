@@ -17,7 +17,6 @@ function Home() {
       <section className="section1">
         <Industries />
       </section>
-
       <section className="section2">
         <div className="hero">
           <p>Reasearch</p>
