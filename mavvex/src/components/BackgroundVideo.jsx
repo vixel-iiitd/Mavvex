@@ -4,7 +4,7 @@ import "./BackgroundVideo.css";
 
 function BackgroundVideo() {
   return (
-    <div class="video-container">
+    <div class="video-container" id="Home">
       <div>
         <div className="overlay"></div>
         <video src={videoBG} type="video/mp4" autoPlay loop muted />

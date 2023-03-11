@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../Images/Logo.png";
-
+import Logo from "../Images/Logo6.png";
+import { HashLink } from "react-router-hash-link";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -25,7 +25,9 @@ const Navbar = () => {
     <div>
       <div>
         <nav className={offset ? "active sticky" : "sticky"}>
-          <img src={Logo} className="h-9" alt="logo" />
+          <HashLink to="/#Home" className="dropdown-toggle" spy ={true} smooth={true}>
+            <img src={Logo} className="h-9" alt="logo" />
+          </HashLink>
           <ul className="nav-links">
             <li className="dropdown">
               <Link to="/" className="dropdown-toggle">
@@ -33,7 +35,9 @@ const Navbar = () => {
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <ScrollLink to="UseCase1" >Deep Tech Product Development</ScrollLink>
+                  <HashLink to="/#UseCase1" spy={true} smooth={true}>
+                    Deep Tech Product Development
+                  </HashLink>
                 </li>
                 <li>
                   <Link to="/">
@@ -61,28 +65,20 @@ const Navbar = () => {
 
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/Healthcare">
-                    Healthcare
-                  </Link>
+                  <Link to="/Healthcare">Healthcare</Link>
                 </li>
                 <li>
-                  <Link to="/Retail">
-                    Retail
-                  </Link>
+                  <Link to="/Retail">Retail</Link>
                 </li>
                 <li>
-                  <Link to="/Agriculture">
-                      Agriculture
-                  </Link>
+                  <Link to="/Agriculture">Agriculture</Link>
                 </li>
                 <li>
-                  <Link to="/ConversationalAI">
-                  Conversational AI
-                  </Link>
+                  <Link to="/ConversationalAI">Conversational AI</Link>
                 </li>
                 <li>
                   <Link to="/SecurityPrivacyAI">
-                  Security and Privacy in AI
+                    Security and Privacy in AI
                   </Link>
                 </li>
               </ul>

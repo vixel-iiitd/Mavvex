@@ -69,7 +69,7 @@ nav {
 }
 
 .dropdown-menu li {
-  cursor: pointer; 
+  cursor: pointer;
   position: relative;
 }
 
@@ -95,7 +95,7 @@ nav {
 }
 
 .h-9 {
-  height: 5rem;
+  height: 2rem;
   align-items: left;
   margin: 2rem;
 }
@@ -183,3 +183,7 @@ nav.active.sticky {
   padding: 0;
   height: 4rem;
 }
+/* 
+html {
+  scroll-behavior: smooth;
+} */
