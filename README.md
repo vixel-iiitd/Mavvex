@@ -1,2 +1,2 @@
 # Mavvex
- Mavvex website, for Independent project
+ Mavvex website for Independent project
