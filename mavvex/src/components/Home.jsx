@@ -18,7 +18,7 @@ function Home() {
       <section className="section2">
         <div className="hero">
           <p>Reasearch</p>
-        </div>
+        </div>-
       </section>
       <section className="section2">
         <div className="hero">

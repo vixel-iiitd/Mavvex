@@ -7,6 +7,7 @@ import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, 
 
 const Footer = () => {
   return (
+    <footer>
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
@@ -66,6 +67,7 @@ const Footer = () => {
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>
+    </footer>
   );
 };
 

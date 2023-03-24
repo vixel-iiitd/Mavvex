@@ -11,8 +11,6 @@ nav {
   height: 80px;
   padding: 0 20px;
   /* font-family: "Lato", sans-serif; */
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.5);
   font-family: "Nunito", sans-serif;
 }
 
@@ -21,10 +19,12 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  border: 20px;
 }
 
 .nav-links li {
   position: relative;
+  border: 20px;
 }
 
 .nav-links a {
@@ -33,15 +33,19 @@ nav {
   font-size: 16px;
   padding: 20px;
   text-decoration: none;
+
+  border: 20px;
 }
 
 .nav-links a:hover {
-  background-color: rgba(161, 28, 176, 0.2);
+  background-color: rgb(100, 174, 253);
   border: 50px;
 }
 
 .dropdown {
   position: relative;
+
+  border: 20px;
 }
 
 .dropdown .dropdown-toggle::after {
@@ -52,7 +56,7 @@ nav {
 }
 
 .dropdown .dropdown-menu {
-  background-color: rgba(5, 146, 162, 0.5);
+  background-color: rgb(5, 146, 162);
   display: none;
   list-style: none;
   margin: 0;
@@ -60,22 +64,29 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.175);
   border: 50px;
 }
 
 .dropdown.active .dropdown-menu {
   display: block;
+  border: 20px;
 }
 
 .dropdown-menu li {
   cursor: pointer;
   position: relative;
+
+  border: 20px;
 }
+
+
+
 
 .dropdown-menu a {
   color: #ffffff;
   display: block;
+  border: 20px;
   font-size: 16px;
   padding: 10px 20px;
   text-decoration: none;
@@ -83,7 +94,9 @@ nav {
 }
 
 .dropdown-menu a:hover {
-  background-color: rgba(103, 181, 233, 0.9);
+  background-color: rgb(29, 61, 82);
+
+  border: 20px;
 }
 
 .dropdown-submenu .dropdown-menu {

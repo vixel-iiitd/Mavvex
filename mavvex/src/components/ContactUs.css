@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+
+.contact-us {
+  max-width: 85%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  display: flex;
+}
+.backcont {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 0 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+  display: flex;
+  color: #8b98f7fb;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.contact-us h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact-us p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact-us form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us label {
+  font-weight: bold;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.contact-us textarea {
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us button[type="submit"] {
+  background-color: #6a7dd2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us button[type="submit"]:hover {
+  background-color: #944ad5;
+}
+
+iframe {
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  /* margin-bottom: 40px; */
+}

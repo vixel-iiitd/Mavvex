@@ -25,7 +25,12 @@ const Navbar = () => {
     <div>
       <div>
         <nav className={offset ? "active sticky" : "sticky"}>
-          <HashLink to="/#Home" className="dropdown-toggle" spy ={true} smooth={true}>
+          <HashLink
+            to="/#Home"
+            className="dropdown-toggle"
+            spy={true}
+            smooth={true}
+          >
             <img src={Logo} className="h-9" alt="logo" />
           </HashLink>
           <ul className="nav-links">
@@ -107,7 +112,7 @@ const Navbar = () => {
                   <Link to="/">About us</Link>
                 </li>
                 <li>
-                  <Link to="/">Contact us</Link>
+                  <Link to="/ContactUs">Contact us</Link>
                 </li>
 
                 <li>

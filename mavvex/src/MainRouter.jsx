@@ -11,6 +11,7 @@ import Agriculture from "./components/Agriculture";
 import ConversationalAI from "./components/ConversationalAI";
 import SecurityPrivacyAI from "./components/SecurityPrivacyAI";
 import UseCase1 from "./components/UseCase1";
+import ContactUs from "./components/ContactUs";
 
 function MainRouter() {
   return (
@@ -18,15 +19,18 @@ function MainRouter() {
       <section>
         <Navbar />
       </section>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Healthcare" element={<Healthcare />} />
-        <Route path="/Retail" element={<Retail />} />
-        <Route path="/Agriculture" element={<Agriculture />} />
-        <Route path="/ConversationalAI" element={<ConversationalAI />} />
-        <Route path="/SecurityPrivacyAI" element={<SecurityPrivacyAI />} />
-        <Route path="/UseCase1" element={<UseCase1 />} />
-      </Routes>
+      <section>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Healthcare" element={<Healthcare />} />
+          <Route path="/Retail" element={<Retail />} />
+          <Route path="/Agriculture" element={<Agriculture />} />
+          <Route path="/ConversationalAI" element={<ConversationalAI />} />
+          <Route path="/SecurityPrivacyAI" element={<SecurityPrivacyAI />} />
+          <Route path="/UseCase1" element={<UseCase1 />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+        </Routes>
+      </section>
       <section>
         <Footer />
       </section>

@@ -4,77 +4,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
-.healthcare-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+@media (max-width: 768px) {
+  .big-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 100px 10px 100px rgba(0, 0, 0, 0.168);
+    padding: 20px;
+    text-align: center;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 40%;
+  }
+
+  .big-card img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .big-card h2 {
+    font-size: 2rem;
+    margin-bottom: 2%;
+  }
+
+  .big-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .backcont-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+    display: flex;
+    color: #174710fb;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+  }
 }
 
-.healthcare-container h1 {
-  font-size: 48px;
-  font-weight: bold;
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+  padding: 20px;
+  text-align: center;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.big-card img {
+  width: 100%;
+  max-width: 500px;
   margin-bottom: 20px;
 }
 
-.healthcare-container p {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.healthcare-container ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.healthcare-container li {
-  font-size: 24px;
+.big-card h2 {
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.healthcare-container li:before {
-  content: "•";
-  margin-right: 10px;
+.big-card p {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
-@media screen and (max-width: 768px) {
-  .healthcare-container {
-    padding: 0 10px;
-  }
-  
-  .healthcare-container h1 {
-    font-size: 36px;
-  }
-  
-  .healthcare-container p {
-    font-size: 18px;
-  }
-  
-  .healthcare-container li {
-    font-size: 18px;
-  }
+.backcont-1 {
+  max-width: 85%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 0 2%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  color: #464684fb;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
 }
-
-@media screen and (max-width: 480px) {
-  .healthcare-container {
-    padding: 0 5px;
-  }
-  
-  .healthcare-container h1 {
-    font-size: 24px;
-  }
-  
-  .healthcare-container p {
-    font-size: 16px;
-  }
-  
-  .healthcare-container li {
-    font-size: 16px;
-  }
-} 
-
