@@ -38,7 +38,7 @@ const Navbar = () => {
               <Link to="/" className="dropdown-toggle">
                 Use Case
               </Link>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu" style={{borderRadius: "5px"}}>
                 <li>
                   <HashLink to="/#UseCase1" spy={true} smooth={true}>
                     Deep Tech Product Development
@@ -64,11 +64,12 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 className="dropdown-toggle"
+               
               >
                 Industries
               </ScrollLink>
-
-              <ul className="dropdown-menu">
+               <div >
+               <ul className="dropdown-menu" style={{borderRadius: "5px"}}>
                 <li>
                   <Link to="/Healthcare">Healthcare</Link>
                 </li>
@@ -87,13 +88,16 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
+               </div>
+             
+          
             </li>
 
             <li className="dropdown">
               <Link to="/" className="dropdown-toggle">
                 Research
               </Link>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu" style={{borderRadius: "5px"}}>
                 <li>
                   <Link to="/">Publications</Link>
                 </li>
@@ -107,7 +111,7 @@ const Navbar = () => {
               <Link to="/" className="dropdown-toggle">
                 Company
               </Link>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu" style={{borderRadius: "5px"}}>
                 <li>
                   <Link to="/">About us</Link>
                 </li>

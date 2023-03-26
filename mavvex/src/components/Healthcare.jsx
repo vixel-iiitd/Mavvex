@@ -13,13 +13,7 @@ function Healthcare() {
       </div>
 
       <div className="big-card">
-        <h1>Healtcare</h1>
-        <h1>Healtcare</h1>
-        <h1>Healtcare</h1>
-        <h1>Healtcare</h1>
-        <h1>Healtcare</h1>
-        <h1>Healtcare</h1>
-        <h1>Healtcare</h1>
+      <h1>Lorem Ipsum</h1>
         <h1>Healtcare</h1>
         <h1>Healtcare</h1>
         <h1>Healtcare</h1>
