@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./ContactUs.css";
 import BackgroundImageContactUs from "./BackgroundImageContactUs";
+import BackgroundVideo from "./BackgroundVideo";
 
 function ContactUs() {
   const [name, setName] = useState("");
