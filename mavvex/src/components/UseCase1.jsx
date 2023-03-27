@@ -8,11 +8,27 @@ const CircleContainer = styled.div`
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  // border-radius: 50%;
-  background-color: #1a1a1a;
+  background: linear-gradient(135deg, #38404F, #2D3E4E, #253743, #162736, #0B1F2E, #121A27, #17121F);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   position: relative;
   overflow: hidden;
 `;
+
+
 
 const CircleItem = styled.div`
   position: absolute;
@@ -58,6 +74,7 @@ const CircleLabel = styled.div`
   margin-bottom: auto;
   text-align: center;
   transition: color 0.3s ease-in-out;
+  padding: 20px;
 
   &:hover {
     font-size: 1rem; // Keep the font size same for hovered state
@@ -94,7 +111,7 @@ const TechCircle = () => {
       case 2:
         return 'Developing products that allow users to remove specific data points from a machine learning model.';
       case 3:
-        return 'Providing conversational AI solutions for developing and enhancing the language model capabilities of businesses.';
+        return 'Providing conversational AI solutions to enhance businesses language model capabilities.';
       default:
         return '';
     }
