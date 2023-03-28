@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+
 const CircleContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -8,7 +9,7 @@ const CircleContainer = styled.div`
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  background: linear-gradient(135deg, #38404F, #2D3E4E, #253743, #162736, #0B1F2E, #121A27, #17121F);
+  background: linear-gradient(135deg, #00a2e2, #00008b, #ffffff);
   background-size: 500% 500%;
   animation: gradient 15s ease infinite;
 
@@ -30,6 +31,8 @@ const CircleContainer = styled.div`
 
 
 
+
+
 const CircleItem = styled.div`
   position: absolute;
   height: 200px;
@@ -42,15 +45,20 @@ const CircleItem = styled.div`
   justify-content: center;
   align-items: center;
   animation: circleItem 6s linear infinite;
-  transform: ${(props) => `rotate(${props.degrees}deg) translate(280px) rotate(-${props.degrees}deg)`};
+  transform: ${(props) =>
+    `rotate(${props.degrees}deg) translate(${(props.degrees === 0 || props.degrees === 180) ? '350px' : '260px'}) rotate(-${props.degrees}deg)`};
   transition: all 0.3s ease-in-out;
+  pointer-events: ${(props) => (props.isTransitioning ? 'none' : 'auto')};
 
   &:hover {
-    transform: ${(props) => `rotate(${props.degrees}deg) translate(0px) rotate(-${props.degrees}deg) scale(2)`};
+    transform: ${(props) =>
+      `rotate(${props.degrees}deg) translate(0px) rotate(-${props.degrees}deg) scale(2)`};
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
     z-index: 1;
+    pointer-events: auto;
+    font-size: 1rem;
   }
-  
+
   &:nth-child(1) {
     animation-delay: 0s;
   }
@@ -68,19 +76,18 @@ const CircleItem = styled.div`
   }
 `;
 
+
 const CircleLabel = styled.div`
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
   padding: 20px;
-
-  &:hover {
-    font-size: 1rem; // Keep the font size same for hovered state
-  }
+  transform: ${(props) => (props.hovered ? 'translateY(0)' : 'none')};
+  will-change: transform;
+  backface-visibility: hidden;
 `;
-
 
 
 const CircleIcon = styled.i`
@@ -91,15 +98,21 @@ const CircleIcon = styled.i`
 
 const TechCircle = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
+  const [transitioning, setTransitioning] = useState(false);
   const items = [    { label: 'AI-based product development', icon: 'fas fa-laptop-code', degrees: 0 },    { label: 'Data-privacy and security', icon: 'fas fa-tablet-alt', degrees: 90 },    { label: 'Machine unlearning', icon: 'fas fa-mobile-alt', degrees: 180 },    { label: 'Conversational AI', icon: 'fas fa-microchip', degrees: 270 },  ];
 
   const handleMouseEnter = (index) => {
-    setHoveredIndex(index);
+    setTimeout(() => {
+      setHoveredIndex(index);
+    }, 500);
+    setTransitioning(true);
   };
-
+  
   const handleMouseLeave = () => {
-    setHoveredIndex(null);
+    setTimeout(() => {
+      setHoveredIndex(null);
+    }, 3000);
+    setTransitioning(false);
   };
 
   const getLabel = (index) => {
@@ -120,17 +133,21 @@ const TechCircle = () => {
   return (
     <CircleContainer>
        <CircleLabel style={{ fontSize: '3rem', color: hoveredIndex === null ? '#fff' : '#1a1a1a' }}>Why Mavvex ?</CircleLabel>
-      {items.map((item, index) => (
-        <CircleItem
-          degrees={item.degrees}
-          key={index}
-          onMouseEnter={() => handleMouseEnter(index)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <CircleIcon className={item.icon} />
-          <CircleLabel>{hoveredIndex === index ? getLabel(index) : item.label}</CircleLabel>
-        </CircleItem>
-      ))}
+       {items.map((item, index) => (
+      <CircleItem
+        degrees={item.degrees}
+        key={index}
+        onMouseEnter={() => handleMouseEnter(index)}
+        onMouseLeave={handleMouseLeave}
+        isTransitioning={transitioning}
+        
+      >
+        <CircleIcon className={item.icon} />
+        <CircleLabel hovered={hoveredIndex === index}>
+          {hoveredIndex === index ? getLabel(index) : item.label}
+        </CircleLabel>
+      </CircleItem>
+    ))}
     </CircleContainer>
   );
 };
