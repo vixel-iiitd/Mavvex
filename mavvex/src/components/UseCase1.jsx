@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 
 const CircleContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 80%;
   width: 100%;
+  top: 15%;
   margin: 0 auto;
   background: linear-gradient(135deg, #00a2e2, #00008b, #ffffff);
   background-size: 500% 500%;
@@ -37,7 +38,7 @@ const CircleItem = styled.div`
   position: absolute;
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 10%;
   background-color: #fff;
   color: #1a1a1a;
   display: flex;
@@ -89,12 +90,9 @@ const CircleLabel = styled.div`
   backface-visibility: hidden;
 `;
 
-
 const CircleIcon = styled.i`
   font-size: 4rem;
 `;
-
-
 
 const TechCircle = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -118,15 +116,15 @@ const TechCircle = () => {
   const getLabel = (index) => {
     switch (index) {
       case 0:
-        return 'Providing end-to-end services to develop deep technology-based products for various industries.';
+        return "Providing end-to-end services to develop deep technology-based products for various industries.";
       case 1:
-        return 'Building products that use AI and deep technology to enable data-privacy and security.';
+        return "Building products that use AI and deep technology to enable data-privacy and security.";
       case 2:
-        return 'Developing products that allow users to remove specific data points from a machine learning model.';
+        return "Developing products that allow users to remove specific data points from a machine learning model.";
       case 3:
-        return 'Providing conversational AI solutions to enhance businesses language model capabilities.';
+        return 'Providing conversational AI solutions for developing and enhancing the language model capabilities of businesses.';
       default:
-        return '';
+        return "";
     }
   };
 
